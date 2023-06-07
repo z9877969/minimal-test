@@ -1,21 +1,115 @@
 .header {
-  padding: 20px 0;
+  background-color: #f7faff;
+  height: 88px;
 }
 
-.nav-list {
+.header__container--flex {
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.header__logo {
+  width: 100px;
+  height: 14px;
+  display: flex;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header__logo-icon {
+  width: 100%;
+  height: 100%;
+  fill: #0a224a;
+}
+
+/* set visually-hidden */
+.header__nav {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* set visually-hidden -END*/
+
+.header__btn-burger {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__icon-burger {
+  width: 100%;
+  height: 100%;
+  stroke: #0a224a;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 95px;
+  }
+
+  .header__logo {
+    width: 127px;
+    height: 16px;
+  }
+
+  .header__btn-burger {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* reset visually-hidden */
+  .header__nav {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+
+    white-space: normal;
+    clip-path: none;
+    clip: auto;
+    overflow: visible;
+  }
+  /* reset visually-hidden -END*/
+
+  .header__nav-list {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .header__nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0a224a;
+  }
+
+  /* set visually-hidden */
+  .header__btn-burger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* set visually-hidden -END*/
 }

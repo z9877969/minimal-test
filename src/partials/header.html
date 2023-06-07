@@ -1,13 +1,36 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header__container--flex">
+    <a href="./" class="header__logo">
+      <svg class="header__logo-icon">
+        <use href="./img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#about" class="header__nav-link">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#products" class="header__nav-link">Our products</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#prices" class="header__nav-link">Prices</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#bestsellers" class="header__nav-link">Bestsellers</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#reviews" class="header__nav-link">Reviews</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#contacts" class="header__nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__btn-burger">
+      <svg class="header__icon-burger">
+        <use href="./img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
