@@ -5,79 +5,95 @@
     <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-fd82fbd9.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container header__container--flex">
+    <a href="./" class="header__logo">
+      <svg class="header__logo-icon">
+        <use href="/vanilla-app-template/assets/sprite-5cab6fb2.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#about" class="header__nav-link">About us</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#products" class="header__nav-link">Our products</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#prices" class="header__nav-link">Prices</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#bestsellers" class="header__nav-link">Bestsellers</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#reviews" class="header__nav-link">Reviews</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#contacts" class="header__nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__btn-burger">
+      <svg class="header__icon-burger">
+        <use href="/vanilla-app-template/assets/sprite-5cab6fb2.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <!-- Modals -->
+    <div class="modal-burger is-open">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+    <div class="modal-burger__top-bar">
+      <a href="./" class="modal-burger__logo">
+        <svg class="modal-burger__logo-icon">
+          <use href="/vanilla-app-template/assets/sprite-5cab6fb2.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button class="modal-burger__btn-close">
+        <svg class="modal-burger__btn-icon">
+          <use href="/vanilla-app-template/assets/sprite-5cab6fb2.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="modal-burger__nav">
+      <ul class="modal-burger__nav-list">
+        <li class="modal-burger__nav-item">
+          <a href="#about" class="modal-burger__nav-link">About us</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="modal-burger__nav-item">
+          <a href="#products" class="modal-burger__nav-link">Our products</a>
+        </li>
+        <li class="modal-burger__nav-item">
+          <a href="#prices" class="modal-burger__nav-link">Prices</a>
+        </li>
+        <li class="modal-burger__nav-item">
+          <a href="#bestsellers" class="modal-burger__nav-link">Bestsellers</a>
+        </li>
+        <li class="modal-burger__nav-item">
+          <a href="#reviews" class="modal-burger__nav-link">Reviews</a>
+        </li>
+        <li class="modal-burger__nav-item">
+          <a href="#contacts" class="modal-burger__nav-link">Contacts</a>
         </li>
       </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    </nav>
   </div>
-</section>
+</div>
 
 
     
