@@ -7,6 +7,7 @@ const toggleBurgerMenu = e => {
   ) {
     return;
   }
+  console.log("object");
   burgerMenu.classList.toggle('is-open');
   if (burgerMenu.classList.contains('is-open')) {
     burgerMenu.addEventListener('click', closeBurgerClickByLink);
@@ -16,7 +17,7 @@ const toggleBurgerMenu = e => {
 };
 
 const closeBurgerClickByLink = e => {
-  if (e.target.nodeName === 'a') return;
+  if (e.target.nodeName !== 'a') return;
   burgerMenu.classList.toggle('is-open');
   burgerMenu.removeEventListener('click', closeBurgerClickByLink);
 };

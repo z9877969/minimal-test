@@ -2,6 +2,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
+  background-color: #e5e5e5;
   top: 0;
   right: 0;
   transform: translateX(100%);
@@ -14,11 +15,15 @@
 
 .modal-burger__top-bar {
   height: 88px;
+  margin-bottom: 122px;
+  background-color: #f7faff;
+}
+
+.modal-burger__top-bar--flex {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #f7faff;
-  margin-bottom: 122px;
 }
 
 .modal-burger__logo {

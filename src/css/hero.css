@@ -1,3 +1,42 @@
-<section class="hero">
-  <div class="container"></div>
-</section>
+.hero {
+  height: 717px;
+  padding-top: 140px;
+  padding-bottom: 313px;
+  background-image: url(../img/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.hero__title {
+  margin-bottom: 14px;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #0a224a;
+}
+
+.hero__descr {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0a224a;
+}
+
+.hero__btn-order {
+  width: 224px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  background-color: #0a224a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
