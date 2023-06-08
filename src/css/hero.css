@@ -1,5 +1,8 @@
 .hero {
-  height: 717px;
+  background-color: #e5e5e5;
+}
+
+.hero__container--position {
   padding-top: 140px;
   padding-bottom: 313px;
   background-image: url(../img/hero-mob.jpg);
@@ -39,4 +42,59 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container--position {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: none;
+    background: url(../img/hero-tab-1.jpg), url(../img/hero-tab-2.jpg);
+    background-repeat: no-repeat;
+    background-position: 28px 268px, calc(100% - 29px) 66px;
+    background-size: 312px auto, 367px auto;
+  }
+
+  .hero__title {
+    margin-bottom: 410px;
+    font-size: 50px;
+    line-height: 75px;
+  }
+
+  .hero__descr {
+    width: 312px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .hero__btn-order {
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__container--position {
+    background: url(../img/hero-desk-1.jpg), url(../img/hero-desk-2.jpg),
+      url(../img/hero-desk-3.jpg);
+    background-repeat: no-repeat;
+    background-position: 60px 265px, calc(60px + 310px + 25px) 64px,
+      calc(100% - 60px) 64px;
+    background-size: 310px auto, 648px auto, 312px auto;
+  }
+
+  .hero__title {
+    width: 648px;
+    margin-bottom: 246px;
+  }
+
+  .hero__descr {
+    margin-left: auto;
+  }
+
+  .hero__btn-order {
+    margin-left: auto;
+    margin-right: 88px;
+  }
 }

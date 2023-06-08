@@ -1,3 +1,143 @@
-<section class="aboutus">
-  <div class="container"></div>
-</section>
+.about-us__container--bg {
+  padding-top: 64px;
+  background-color: #f7faff;
+}
+
+.about-us__text-wrapper {
+  padding-bottom: 64px;
+}
+
+.about-us__primary-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0a224a;
+}
+.about-us__primary-title::before {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: #0a224a;
+  margin-right: 20px;
+}
+
+.about-us__secondary-title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #0a224a;
+}
+
+.about-us__descr {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0a224a;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.about-us__item {
+  width: 170px;
+}
+
+.about-us__item-value {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0a224a;
+}
+
+.about-us__item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0a224a;
+}
+
+.about-us__image {
+  width: 375px;
+  margin: 0 -16px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__container--bg {
+    padding-bottom: 0;
+    background-color: unset;
+  }
+
+  .about-us__text-wrapper {
+    padding: 36px 64px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #f7faff;
+  }
+
+  .about-us__secondary-title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-us__descr {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .about-us__list {
+    flex-direction: row;
+    align-items: flex-start;
+    row-gap: 0;
+    justify-content: space-between;
+  }
+
+  .about-us__item-descr {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .about-us__image {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us__container--flex {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+  }
+
+  .about-us__text-wrapper {
+    padding: 36px 69px;
+    margin: 0;
+    align-self: center;
+  }
+
+  .about-us__item-descr {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .about-us__image {
+    width: 536px;
+    height: auto;
+    margin: 0;
+  }
+}
