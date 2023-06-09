@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/",
+    "build": "vite build --base=/minimal-test/",
     "preview": "vite preview"
   },
   "devDependencies": {
