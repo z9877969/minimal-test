@@ -1,3 +1,166 @@
-<section class="price">
-  <div class="container"></div>
-</section>
+.price {
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+/* set visually-hidden */
+.price__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* set visually-hidden -END*/
+
+.price__list {
+}
+
+.price__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid #0a224a;
+}
+.price__item:last-child {
+  border-bottom: 1px solid #0a224a;
+}
+.price__item::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #0a224a;
+
+  transform: translateY(-50%);
+  transition: width 300ms linear;
+}
+.price__item:hover::before {
+  width: 50px;
+}
+.price__item:hover > .price__item-type {
+  transform: translateX(calc(50px + 30px));
+}
+
+.price__item-type {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #0a224a;
+
+  transform: translateX(0);
+  transition: transform 300ms linear;
+}
+
+.price__item-value {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #0a224a;
+}
+
+/* застилізувати планшет коли з'явиться в макеті */
+@media screen and (min-width: 768px) {
+  .price {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  /* set visually-hidden */
+  .price__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  /* set visually-hidden -END*/
+
+  .price__list {
+  }
+
+  .price__item {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid #0a224a;
+  }
+  .price__item:last-child {
+    border-bottom: 1px solid #0a224a;
+  }
+
+  .price__item-type {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #0a224a;
+  }
+
+  .price__item-value {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #0a224a;
+  }
+}
+/* застилізувати планшет коли з'явиться в макеті -END */
+
+@media screen and (min-width: 1440px) {
+  .price {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .price__list {
+    padding: 0 112px;
+  }
+
+  .price__item {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid #0a224a; */
+  }
+  .price__item:last-child {
+    /* border-bottom: 1px solid #0a224a; */
+  }
+
+  .price__item-type {
+    /* font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #0a224a; */
+  }
+
+  .price__item-value {
+    /* font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #0a224a; */
+  }
+}
