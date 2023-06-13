@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     
-    <script type="module" crossorigin src="/minimal-test/assets/index-53ba68f5.js"></script>
-    <link rel="stylesheet" href="/minimal-test/assets/index-74177806.css">
+    <script type="module" crossorigin src="/minimal-test/assets/index-6aaf40cc.js"></script>
+    <link rel="stylesheet" href="/minimal-test/assets/index-a5693b54.css">
   </head>
   <body>
     <header class="header">
@@ -130,70 +130,145 @@
     <section class="our-products">
   <div class="container">
     <h2 class="our-products__title">OUR PRODUCTS</h2>
-    <ul class="our-products__list">
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-1-897e862a.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Minimalist storage solutions</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-2-03110800.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Handcrafted minimalist seating</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-3-c2ea1c1c.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Sleek and simple tables</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-4-4b9e86c7.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">
-          Minimalist seating for every space
-        </h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-1-897e862a.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Minimalist storage solutions</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="/minimal-test/assets/our-products-2-03110800.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Handcrafted minimalist seating</h3>
-      </li>
-    </ul>
-    <div class="our-products__range-toggler">
-      <button class="our-products__slider-btn">
+    <div class="our-products__list-wrapper js-gallery-our-products">
+      <ul class="our-products__list">
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-1-897e862a.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Minimalist storage solutions</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-2-03110800.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Handcrafted minimalist seating
+          </h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-3-c2ea1c1c.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Sleek and simple tables</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-4-4b9e86c7.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Minimalist seating for every space
+          </h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-1-897e862a.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Minimalist storage solutions</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="/minimal-test/assets/our-products-2-03110800.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Handcrafted minimalist seating
+          </h3>
+        </li>
+      </ul>
+    </div>
+    <div class="our-products__slider js-slider-our-products">
+      <button class="our-products__slider-btn" data-action="prev">
         <svg class="our-products__slider-icon">
-          <use href="../img/sprite.svg#icon-arrow-left"></use>
+          <use href="/minimal-test/assets/sprite-5cab6fb2.svg#icon-arrow-left"></use>
         </svg>
       </button>
-      <div class="our-products__slider"></div>
-      <button class="our-products__slider-btn">
+      <div class="our-products__slider-line js-slider-line">
+        <div class="our-products__slider-thumb js-slider-thumb"></div>
+      </div>
+      <button class="our-products__slider-btn" data-action="next">
         <svg class="our-products__slider-icon">
-          <use href="../img/sprite.svg#icon-arrow-right"></use>
+          <use href="/minimal-test/assets/sprite-5cab6fb2.svg#icon-arrow-right"></use>
         </svg>
       </button>
+    </div>
+  </div>
+</section>
+
+    <section class="bestsellers">
+  <div class="container">
+    <h2 class="bestsellers__title">Bestsellers</h2>
+    <div class="bestsellers__gallery-wrapper">
+      <div class="bestsellers__main-gallery-item">
+        <div
+          class="bestsellers__item-image-wrapper bestsellers__item-image-wrapper--first"
+        >
+          <img
+            src="/minimal-test/assets/bestsellers-1-af14ce60.jpg"
+            alt=""
+            class="bestsellers__main-gallery-image"
+          />
+        </div>
+        <h3 class="bestsellers__main-gallery-title">The modern platform bed</h3>
+        <p class="bestsellers__main-gallery-price">750$</p>
+      </div>
+      <ul class="bestsellers__list">
+        <li class="bestsellers__item">
+          <div class="bestsellers__item-image-wrapper">
+            <img
+              src="/minimal-test/assets/bestsellers-2-f59d20c3.jpg"
+              alt=""
+              class="bestsellers__image"
+            />
+          </div>
+          <h3 class="bestsellers__item-title">The Cozy Lounge Chair</h3>
+          <p class="bestsellers__item-price">230$</p>
+        </li>
+        <li class="bestsellers__item">
+          <div class="bestsellers__item-image-wrapper">
+            <img
+              src="/minimal-test/assets/bestsellers-3-f12ebda0.jpg"
+              alt=""
+              class="bestsellers__image"
+            />
+          </div>
+          <h3 class="bestsellers__item-title">The industrial accent chair</h3>
+          <p class="bestsellers__item-price">250$</p>
+        </li>
+        <li class="bestsellers__item">
+          <div class="bestsellers__item-image-wrapper">
+            <img
+              src="/minimal-test/assets/bestsellers-4-9b0885c9.jpg"
+              alt=""
+              class="bestsellers__image"
+            />
+          </div>
+          <h3 class="bestsellers__item-title">The sleek stand</h3>
+          <p class="bestsellers__item-price">300$</p>
+        </li>
+        <li class="bestsellers__item">
+          <div class="bestsellers__item-image-wrapper">
+            <img
+              src="/minimal-test/assets/bestsellers-5-4a46d7ff.jpg"
+              alt=""
+              class="bestsellers__image"
+            />
+          </div>
+          <h3 class="bestsellers__item-title">The minimalist sofa</h3>
+          <p class="bestsellers__item-price">650$</p>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
