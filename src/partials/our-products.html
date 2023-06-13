@@ -1,68 +1,76 @@
 <section class="our-products">
   <div class="container">
     <h2 class="our-products__title">OUR PRODUCTS</h2>
-    <ul class="our-products__list">
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-1.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Minimalist storage solutions</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-2.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Handcrafted minimalist seating</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-3.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Sleek and simple tables</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-4.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">
-          Minimalist seating for every space
-        </h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-1.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Minimalist storage solutions</h3>
-      </li>
-      <li class="our-products__item">
-        <img
-          src="./img/our-products-2.jpg"
-          alt=""
-          class="our-products__item-image"
-        />
-        <h3 class="our-products__item-title">Handcrafted minimalist seating</h3>
-      </li>
-    </ul>
-    <div class="our-products__range-toggler">
-      <button class="our-products__slider-btn">
+    <div class="our-products__list-wrapper js-gallery-our-products">
+      <ul class="our-products__list">
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-1.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Minimalist storage solutions</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-2.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Handcrafted minimalist seating
+          </h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-3.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Sleek and simple tables</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-4.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Minimalist seating for every space
+          </h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-1.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">Minimalist storage solutions</h3>
+        </li>
+        <li class="our-products__item">
+          <img
+            src="./img/our-products-2.jpg"
+            alt=""
+            class="our-products__item-image"
+          />
+          <h3 class="our-products__item-title">
+            Handcrafted minimalist seating
+          </h3>
+        </li>
+      </ul>
+    </div>
+    <div class="our-products__slider js-slider-our-products">
+      <button class="our-products__slider-btn" data-action="prev">
         <svg class="our-products__slider-icon">
-          <use href="../img/sprite.svg#icon-arrow-left"></use>
+          <use href="./img/sprite.svg#icon-arrow-left"></use>
         </svg>
       </button>
-      <div class="our-products__slider"></div>
-      <button class="our-products__slider-btn">
+      <div class="our-products__slider-line js-slider-line">
+        <div class="our-products__slider-thumb js-slider-thumb"></div>
+      </div>
+      <button class="our-products__slider-btn" data-action="next">
         <svg class="our-products__slider-icon">
-          <use href="../img/sprite.svg#icon-arrow-right"></use>
+          <use href="./img/sprite.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
